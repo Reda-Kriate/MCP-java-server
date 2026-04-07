@@ -20,12 +20,12 @@ public class CourseService {
         courses.add(new Course("Prompt Engineering","https://www.youtube.com/watch?v=fssGlao8ndc"));
     }
 
-    @Tool(name = "get_all_courses",description = "get all pr youssfi courses")
+    @Tool(name = "get_all_courses",description = "get all pr Abdellah Moutaouakkil courses")
     public List<Course> getAllCourses(){
         return courses;
     }
 
-    @Tool(name = "get_course_by_title",description = "get pr youssfi course by title")
+    @Tool(name = "get_course_by_title",description = "get pr Abdellah Moutaouakkil course by title")
     public Course getCourseByTitle(String title){
         return courses.stream().filter(c->c.title().equals(title)).findFirst().orElseThrow();
     }
